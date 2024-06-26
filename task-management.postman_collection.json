@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "9f664606-95fb-44c5-9071-f53c1c44c90c",
+		"name": "task-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13119734",
+		"_collection_link": "https://shaidsifat55.postman.co/workspace/Team-Collab~09e8dafb-51ef-492c-8bef-3d1691ce4f0e/collection/13119734-9f664606-95fb-44c5-9071-f53c1c44c90c?action=share&source=collection_link&creator=13119734"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/management/users/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/management/users/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/users/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/management/users/login/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/users/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU4NDE1LCJpYXQiOjE3MTkzNTY2MTUsImp0aSI6IjUwMzJhZDU2MGM0YjRmZGQ4MGJkNjc2OTM0M2Q5MTU5IiwidXNlcl9pZCI6Nn0.L2ay2HI08nhC6P1ZsInFdUF_wFEhC6uY2s5Q8s6EKko",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/management/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/users/6/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU4NDE1LCJpYXQiOjE3MTkzNTY2MTUsImp0aSI6IjUwMzJhZDU2MGM0YjRmZGQ4MGJkNjc2OTM0M2Q5MTU5IiwidXNlcl9pZCI6Nn0.L2ay2HI08nhC6P1ZsInFdUF_wFEhC6uY2s5Q8s6EKko",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/management/users/6/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/projects/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU4NDE1LCJpYXQiOjE3MTkzNTY2MTUsImp0aSI6IjUwMzJhZDU2MGM0YjRmZGQ4MGJkNjc2OTM0M2Q5MTU5IiwidXNlcl9pZCI6Nn0.L2ay2HI08nhC6P1ZsInFdUF_wFEhC6uY2s5Q8s6EKko",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "head-office project",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/management/projects/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/projects/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU4NDE1LCJpYXQiOjE3MTkzNTY2MTUsImp0aSI6IjUwMzJhZDU2MGM0YjRmZGQ4MGJkNjc2OTM0M2Q5MTU5IiwidXNlcl9pZCI6Nn0.L2ay2HI08nhC6P1ZsInFdUF_wFEhC6uY2s5Q8s6EKko",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/management/projects/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/tasks/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU4NDE1LCJpYXQiOjE3MTkzNTY2MTUsImp0aSI6IjUwMzJhZDU2MGM0YjRmZGQ4MGJkNjc2OTM0M2Q5MTU5IiwidXNlcl9pZCI6Nn0.L2ay2HI08nhC6P1ZsInFdUF_wFEhC6uY2s5Q8s6EKko",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "A",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/management/tasks/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/tasks/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU4NDE1LCJpYXQiOjE3MTkzNTY2MTUsImp0aSI6IjUwMzJhZDU2MGM0YjRmZGQ4MGJkNjc2OTM0M2Q5MTU5IiwidXNlcl9pZCI6Nn0.L2ay2HI08nhC6P1ZsInFdUF_wFEhC6uY2s5Q8s6EKko",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title ",
+							"value": "Head Office Project",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Hod project",
+							"type": "text"
+						},
+						{
+							"key": "project",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/management/tasks/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/comments/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU5MTIxLCJpYXQiOjE3MTkzNTczMjEsImp0aSI6ImJkMDVkY2UzNDIyZTQ4ODc4NmFhNDE5MmRhNGY5OTFmIiwidXNlcl9pZCI6Nn0.WMCLZK2LU6lmo6XbBZPrN_CN734ZHCaNt1tQXQ80S6Q",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/management/comments/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/management/comments/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5MzU5MTIxLCJpYXQiOjE3MTkzNTczMjEsImp0aSI6ImJkMDVkY2UzNDIyZTQ4ODc4NmFhNDE5MmRhNGY5OTFmIiwidXNlcl9pZCI6Nn0.WMCLZK2LU6lmo6XbBZPrN_CN734ZHCaNt1tQXQ80S6Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "content",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "task ",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/management/comments/"
+			},
+			"response": []
+		}
+	]
+}
